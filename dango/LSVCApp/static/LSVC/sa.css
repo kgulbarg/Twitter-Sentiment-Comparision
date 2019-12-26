@@ -1,0 +1,111 @@
+/*html,body { height:100%; }*/
+
+ul {
+    color: white;
+    font-size: 0%;
+}
+.title {
+    color: rgb(109, 79, 4);
+    /*position: fixed;left:0%;*/
+    text-align: center;
+    padding: 1px;
+    font-size: 120%;
+    background-image: linear-gradient(to right, rgb(236, 142, 142), rgb(241, 241, 155));
+    width: 100%;
+}
+input {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(109, 58, 58);
+    box-sizing: border-box;
+  }
+img {
+    display: inline-block;
+    max-width: 22%;
+    margin : 0;
+}
+
+.column {
+    float: left;
+    padding: 4px;
+}
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    width: 30%; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    /*top: 0; /* Stay at the top */
+    left: 1;
+    background-color: #fef3f7; /* Black */
+    padding-top: 20px;
+    text-align: justify;
+    font-size: 120%;
+    background-image: linear-gradient(to bottom, rgb(187, 241, 124), rgb(155, 185, 241));
+}
+
+/* Main column */
+.main {   
+    -ms-flex: 100%; /* IE10 */
+    flex: 100%;
+    background-color: white;
+    margin-left: 34%; /* Same as the width of the sidebar */
+    padding: 0px;  
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 120%;  
+    height: 100%;
+    background-image: url("/static/LSVC/prods.jpg");
+    /*position: fixed;    background-image: url("C:/Users/Kaumudi/Pictures/prods.jpg");*/
+
+}
+
+button {
+    font-size: 120%;  
+    color: white;
+    padding: 14px 20px;
+    margin: 4%;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    background-image: radial-gradient(rgb(131, 238, 149), rgb(38, 134, 38));
+
+}
+.buto {
+    font-size: 120%;  
+    color: white;
+    padding: 14px;
+    margin: 4%;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    background-image: radial-gradient(rgb(131, 238, 149), rgb(38, 134, 38));
+
+}
+
+.td1 {
+    width: 50%;
+    padding: 14px
+}
+
+.analyze{
+    background-image: radial-gradient(rgb(155, 185, 241), rgb(187, 241, 124));
+    text-align: center;
+    margin-top: 0%;
+    padding-top: 8px;
+    flex: 1 1 auto;
+}
+/*.ahr { margin: 0px; }*/

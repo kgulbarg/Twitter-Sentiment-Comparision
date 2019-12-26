@@ -1,0 +1,43 @@
+{% extends 'LSVC/layout.html' %}
+{% block content %}
+{% load static from staticfiles %}
+<div class="row"><div class="side">
+    <h2>About this tool:</h2>
+    <h3><centre>
+        Twitter has emerged as a major micro-blogging website,
+        having over 100 million users generating over 500 million
+        tweets every day. With such large audience, Twitter has
+        consistently attracted users to convey their opinions and
+        perspective about any issue, brand, company or any other
+        topic of interest. Due to this reason, Twitter is used as an
+        informative source by many organizations, institutions and
+        companies.<br/><br/> 
+        This tool helps you to understand the public opinion 
+        towards an electronic product and helps you in decided which product is the 
+        best among your chioces. It uses the data from the forms to query 
+        through Twitter for sentiment of the product. You can also use 
+        this tool to understand the opinion towards brands of a product.
+    </centre></h3>
+</div>
+<div class="main">
+    
+    <h4>Please fill this form:</h4><h5>
+        <form method="POST" action="{% url 'brandanalyze' %}" enctype="multipart/form-data">
+            {% csrf_token %}
+            <table style="width:100%">
+            {% for field in form  %}
+            <tr>
+                <td>{{ field.label_tag }}</td><td>{{ field }}</td> 
+            </tr>
+            {% endfor %}   
+            <tr></tr>
+            </table>         
+            <br/>
+            <button type="submit">Get Review Analysis</button>
+            <br/><br/><br/><br/>
+        </form>
+        </h5>
+    
+    </div>
+</div>
+{% endblock %}

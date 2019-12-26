@@ -1,0 +1,22 @@
+{% extends 'LSVC/layout.html' %}
+{% block content %}
+{% load static from staticfiles %}
+<div class="analyze">
+    <img src="{% static 'LSVC/commonlegend.png' %}" style="float: right;"/>
+    <h2 style="text-align: center; position:absolute; left:0px; right:0px;">Preferred {{ compared }}: </h2><br/><br/>
+    <h1 style="text-align: center; position:absolute; left:0px; right:0px;">{{ data }}</h1><br/><br/><br/><br/>
+    <h2>Sentiment Pie Charts</h2><br/><br/>
+    <div class="row">
+        <div class="column"><img src="{% static 'LSVC/pie1.png' %}"/>
+        <img src="{% static 'LSVC/pie2.png' %}"/>
+        {% if count > 2 %}
+        <img src="{% static 'LSVC/pie3.png' %}"/>
+        {% endif %}
+        {% if count > 3 %}
+        <img src="{% static 'LSVC/pie4.png' %}"/>
+        {% endif %}
+        </div>
+    </div>
+    <br/>
+</div>
+{% endblock %}

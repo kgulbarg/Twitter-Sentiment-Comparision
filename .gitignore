@@ -1,0 +1,4 @@
+*.sav
+*-checkpoint.ipynb
+*.pyc
+pie[1-4].png
