@@ -13,6 +13,9 @@ Installations required:
 10. Install Numpy package using: pip install numpy
 11. Install Pandas package using: pip install pandas
 
+For first time execution:
+Execute all the .ipynb files. These create the machine learning model needed and the preprocessors as .sav files which will be used further.
+
 In order to execute the project files following are the steps: 
 1. Open the command prompt.
 2. An optional step is to activate the virtual environment created. Change the directory to py1 which is now a folder in the ‘Envs’ folder of the system and type the command: activate
